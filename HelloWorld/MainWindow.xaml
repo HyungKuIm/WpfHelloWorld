@@ -34,16 +34,17 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <ListBox Grid.Column="0" ItemsSource="{Binding Pages}">
+            <ListBox Grid.Column="0" ItemsSource="{Binding Pages}" SelectedItem="{Binding CurrentPage}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <RadioButton Content="{Binding Page}" />
+                        <RadioButton Content="{Binding Page}" IsChecked="{Binding IsSelected, RelativeSource={RelativeSource AncestorType={x:Type ListBoxItem}}}"/>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
             
             <Frame x:Name="MainFrame" 
                    Grid.Column="1"
+                   NavigationUIVisibility="Hidden"
                    Content="{Binding CurrentPage, 
                     Converter={conv:ApplicationPageValueConverter}}"/>
         </Grid>

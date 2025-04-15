@@ -16,7 +16,22 @@ namespace HelloWorld.ViewModel
         //public ApplicationPage CurrentPage { get; set; }
         //    = ApplicationPage.ConvertTest;
 
-        public PageModel CurrentPage { get; set; }
+        //public PageModel CurrentPage { get; set; }
+
+        private PageModel mCurrentPage;
+        public PageModel CurrentPage
+        {
+            get { return mCurrentPage; }
+            set
+            {
+                if (mCurrentPage != value)
+                {
+                    mCurrentPage = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+
         public ObservableCollection<PageModel> Pages { get; set; }
 
         public WindowViewModel()
