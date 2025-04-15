@@ -1,0 +1,51 @@
+﻿<Window x:Class="HelloWorld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWorld"
+        xmlns:conv="clr-namespace:HelloWorld.ValueConverters"
+        WindowStartupLocation="CenterScreen"  
+        mc:Ignorable="d"
+        Title="MyWindow" Height="600" Width="900">
+    <Window.Resources>
+       
+    </Window.Resources>
+        
+    <!--CenterScreen 창의 위치를 중앙 -->
+    <!-- 자식 요소 -->
+    <!-- 속성(=프로퍼티) : Title, Height, Width
+         속성값: MainWindow, 450, 800 반드시 "", ('')로 감싸야 한다
+         속성과 속성 사이에는 하나 이상의 화이트스페이스 가 있어야 한다.
+         기본 속성-->
+    <!-- 요소: C# 클래스를 사용하여 객체화 시킨것
+           반드시 잘 닫아야 한다...-->
+    <!-- Border: 요소, Background: 속성(=프로퍼티), Yellow: 속성값 -->
+    <!--" Border Background="Yellow"></Border-->
+    <!-- 프로퍼티 요소 -->
+    <Border Background="White">
+        
+
+        <Grid>
+            <!-- 화면 정중앙에 위치함 -->
+            <!-- Frame은 컨텐트 컨트롤(버튼같은) -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <ListBox Grid.Column="0" ItemsSource="{Binding Pages}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <RadioButton Content="{Binding Page}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            
+            <Frame x:Name="MainFrame" 
+                   Grid.Column="1"
+                   Content="{Binding CurrentPage, 
+                    Converter={conv:ApplicationPageValueConverter}}"/>
+        </Grid>
+    </Border>
+</Window>
