@@ -15,6 +15,7 @@ namespace HelloWorld.DataModels
         ButtonTest =4,
         LeeTest2 = 5,
         ConvertTest = 6,
+        KBO = 7,
 
     }
 }

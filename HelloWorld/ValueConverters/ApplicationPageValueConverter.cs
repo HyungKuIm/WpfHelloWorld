@@ -31,6 +31,8 @@ namespace HelloWorld.ValueConverters
                     return new LeeTest2();
                 case ApplicationPage.ConvertTest:
                     return new ConverterTest();
+                case ApplicationPage.KBO:
+                    return new KBOListPage();
                 default:
                     return null;
 

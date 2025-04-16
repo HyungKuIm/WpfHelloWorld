@@ -19,9 +19,19 @@
     <None Remove="Fonts\SCDream8.otf" />
     <None Remove="Fonts\SCDream9.otf" />
     <None Remove="Images\Background\Autumn.jpg" />
+    <None Remove="Images\Chang.png" />
+    <None Remove="Images\Chungbk.png" />
+    <None Remove="Images\Chunjw.png" />
     <None Remove="Images\hangain.jpg" />
+    <None Remove="Images\Ko.png" />
+    <None Remove="Images\LeeJungHoo.png" />
+    <None Remove="Images\Na.png" />
     <None Remove="Images\paris2.png" />
+    <None Remove="Images\Reyes.png" />
+    <None Remove="Images\Son.png" />
     <None Remove="Images\swlee.jpg" />
+    <None Remove="Images\Whang.png" />
+    <None Remove="Images\You.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,13 +65,43 @@
     <Resource Include="Images\Background\Autumn.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\Chang.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Chungbk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Chunjw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\hangain.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Ko.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\LeeJungHoo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Na.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\paris2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\Reyes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Son.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\swlee.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Whang.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\You.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
