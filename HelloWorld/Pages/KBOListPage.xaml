@@ -34,7 +34,7 @@
                 <!-- 컬렉션의 각 항목을 표시한다(wpf의 foreach문) -->
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <ctrl:PlayerControl />
+                        <ctrl:PlayerControl KBO="{Binding DataContext, RelativeSource={RelativeSource AncestorType=Page}}"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
                 <!-- 아이템컨테이너스타일 : 아이템의 스타일의 지정 -->

@@ -26,16 +26,25 @@ namespace HelloWorld.Controls
             InitializeComponent();
         }
 
+        public static readonly DependencyProperty KBOProperty = 
+            DependencyProperty.Register("KBO", typeof(KBOViewModel), typeof(PlayerControl), new PropertyMetadata(null));
+
+        public KBOViewModel KBO
+        {
+            set { SetValue(KBOProperty, value); }
+            get { return (KBOViewModel)GetValue(KBOProperty); }
+        }
+
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
             //MessageBox.Show("Player Clicked");
             if (sender is Border border && border.DataContext is PlayerViewModel player)
             {
                 //MessageBox.Show(player.Name + " Clicked");
-                //foreach (var item in ((KBOViewModel)DataContext).Players)
-                //{
-                //    item.IsSelected = false; // 모든 선수의 IsSelected를 false로 설정
-                //}
+                foreach (var item in KBO.Players)
+                {
+                    item.IsSelected = false; // 모든 선수의 IsSelected를 false로 설정
+                }
                 player.IsSelected = true; // 클릭한 선수의 IsSelected를 true로 설정
 
             }

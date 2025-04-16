@@ -46,10 +46,10 @@
                         <ControlTemplate.Triggers>
                             <!-- Trigger는 wpf의 if문과 대응, else문 필요없음 -->
                             <!-- 1. 프로퍼티 트리거 -->
-                            <Trigger Property="IsMouseOver" Value="True">
+                            <!--<Trigger Property="IsMouseOver" Value="True">
                                 <Setter Property="Background" TargetName="container"
                                         Value="Yellow" />
-                            </Trigger>
+                            </Trigger>-->
                             <!-- 2. 데이터 트리거 -->
                             <DataTrigger Binding="{Binding IsSelected}" Value="True">
                                 <Setter Property="Background" TargetName="container"
@@ -57,7 +57,7 @@
                             </DataTrigger>
                             <!-- 3. 이벤트 트리거(Click, MouseEnter, MouseLeave..)
                                     1:1로만 대응, 주로 애니메이션 실행 -->
-                            <EventTrigger RoutedEvent="MouseEnter">
+                            <!--<EventTrigger RoutedEvent="MouseEnter">
                                 <BeginStoryboard>
                                     <Storyboard>
                                         <ColorAnimation To="LightBlue"
@@ -76,7 +76,7 @@
                                              Storyboard.TargetProperty="Background.Color"/>
                                     </Storyboard>
                                 </BeginStoryboard>
-                            </EventTrigger>
+                            </EventTrigger>-->
 
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
