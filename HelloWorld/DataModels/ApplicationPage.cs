@@ -16,6 +16,7 @@ namespace HelloWorld.DataModels
         LeeTest2 = 5,
         ConvertTest = 6,
         KBO = 7,
+        ScoreCompletion = 8,
 
     }
 }

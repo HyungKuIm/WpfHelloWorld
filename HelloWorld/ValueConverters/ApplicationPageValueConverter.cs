@@ -33,6 +33,8 @@ namespace HelloWorld.ValueConverters
                     return new ConverterTest();
                 case ApplicationPage.KBO:
                     return new KBOListPage();
+                case ApplicationPage.ScoreCompletion:
+                    return new ScoreCompletion();
                 default:
                     return null;
 
